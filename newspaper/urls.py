@@ -20,14 +20,14 @@ urlpatterns = [
         views.CommentView.as_view(),
         name="post-comment",
     ),
-     path(
+    path(
         "post-search/",
         views.PostSearchView.as_view(),
         name="post-search",
-     ),
-     path(
-         "newsletter/",
-         views.NewsletterView.as_view(),
-         name="newsletter",
-     ),
+    ),
+    path(
+        "newsletter/",
+        views.NewsletterView.as_view(),
+        name="newsletter",
+    ),
 ]
