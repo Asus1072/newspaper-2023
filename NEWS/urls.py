@@ -23,7 +23,8 @@ from django.conf import settings
 urlpatterns = [
     path("admin/", admin.site.urls),
     path("summernote/", include("django_summernote.urls")),
-     path("news-admin/", include("blog_app.urls")),
+    path("news-admin/", include("blog_app.urls")),
+    path("api/v1/", include("api.urls")),
     path("", include("newspaper.urls")),
     path("accouts/login/", views.LoginView.as_view(),name="login"),
     path("accounts/logout/", views.LogoutView.as_view(),name="logout"),
